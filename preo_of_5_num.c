@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main()
 {
+    // This program calculates the average of three numbers.
+    
     float num1, num2, num3, average;
     printf("Enter three numbers: ");
     scanf("%f %f %f", &num1, &num2, &num3);
