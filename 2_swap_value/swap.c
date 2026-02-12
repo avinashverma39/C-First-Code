@@ -7,9 +7,7 @@ int main()
     scanf("%f", &num1);
     printf("Enter the second number: ");
     scanf("%f", &num2);
-
     // Swapping the values using a temporary variable
-
     temp = num1;
     num1 = num2;
     num2 = temp;
