@@ -1,6 +1,7 @@
-//swap two variables without using a temporary variable
+// swap two variables without using a temporary variable
 #include <stdio.h>
-int main() {
+int main()
+{
     int a, b;
     printf("Enter two integers: ");
     scanf("%d %d", &a, &b);
