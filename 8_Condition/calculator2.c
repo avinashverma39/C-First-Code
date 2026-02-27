@@ -1,9 +1,10 @@
 // Create a program to create a simple calculator that uses a "switch case" statement to perform basic arithmetic operations
-
 #include <stdio.h>
+// special use in turbo c compiler this header file is used to clear the screen and getch() function is used to hold the output screen until user press any key
+#include <conio.h>
 int main()
 {
-
+    clrscr();
     int num1, num2;
     printf("Enter the first number: ");
     scanf("%d", &num1);
