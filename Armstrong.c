@@ -1,24 +1,25 @@
 // PROGRAM TO CHECK NUMBER IS ARMSTRONG OR NOT
 #include <stdio.h>
+#include <math.h>
 int main()
 {
-
-    int num, num2 = 0, temp, digit, power;
-
-    printf("Enter the number: ");
+    // BY ISING WHILE LOOP
+    int num, originalNum, remainder, n;
+    int result = 0;
+    printf("Enter an integer: ");
     scanf("%d", &num);
-     while(num>0){
+    originalNum = num;
+    while (originalNum > 0)
+    {
+        remainder = originalNum % 10;
+        result += pow(remainder, n);
+        originalNum /= 10;
+    }
 
-        digit = num%10;
-        num2 = num2 + digit*digit*digit;
-        num = num/10;
-     }
-    
-    if(num2==temp){
-        printf("Arm strong number");
-    }
-    else{
-        printf("Not Armstrong number");
-    }
+    if (result == num)
+        printf("%d is an Armstrong number.", num);
+    else
+        printf("%d is not an Armstrong number.", num);
+
     return 0;
 }
