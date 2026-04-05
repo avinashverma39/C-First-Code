@@ -7,7 +7,18 @@ int main()
 
     printf("Enter the number: ");
     scanf("%d", &num);
-     while()
+     while(num>0){
 
+        digit = num%10;
+        num2 = num2 + digit*digit*digit;
+        num = num/10;
+     }
+    
+    if(num2==temp){
+        printf("Arm strong number");
+    }
+    else{
+        printf("Not Armstrong number");
+    }
     return 0;
 }
