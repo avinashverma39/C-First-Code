@@ -21,6 +21,6 @@ int main()
     else
     {
         printf("The number is not a palindrome.");
-    }   
+    }
     return 0;
 }
